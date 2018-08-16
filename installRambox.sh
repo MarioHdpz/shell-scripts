@@ -17,6 +17,9 @@ wget -qO- https://getrambox.herokuapp.com/download/linux_64?filetype=deb | sudo 
 # Add app icon
 sudo wget "https://raw.githubusercontent.com/saenzramiro/rambox/master/resources/Icon.png" -O /opt/rambox/rambox-icon.png
 
+# Add extra libraries
+sudo apt-get install libgconf-2-4
+
 # Configure Desktop Entry
 sudo bash -c "cat <<EOF > /usr/share/applications/rambox.desktop                                                                 
 [Desktop Entry]
